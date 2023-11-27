@@ -11,6 +11,7 @@
     <header id="top">
       <h1>Prework Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
       <section class="card" id="html-section">
@@ -68,13 +69,41 @@
           <li>git push [alias] [branch]: Transmit local branch commits to the remote repository branch</li>
           <li>git add -A: add the changed files in our working directory to the staging area of Git.We use the add -A command to commit all files in the working branch.</li>
           <li>git pull origin main: make sure that our current branch is up to date. It is a good habit to always pull the base branch into your feature branch before pushing up any code.</li>
+          <li> steps to save our work to GitHub: 
+            1.stage our changes: git add -A 
+            2. add a commit message that describes the changes we have made: git commit -m 'your message here'
+            3. Once the changes are added and committed locally, make sure our local branch is up to date before pushing up our changes. Pull in the base branch main to our feature branch feature: git pull origin main
+            4. to complete the Git flow, use git push to push up your changes to the remote repository by running: git push origin feature/'name of the feature directory'
+            5. Navigate to the repository in GitHub. Change the branch to the feature branch and refresh the page to confirm that changes you pushed up are now in the feature branch in GitHub.
+          </li>
         </ul>
       </section>
 
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>Enter your JavaScript notes here</li>
+          <li>A variable is a named container that allows us to store data in our code.</li>
+          <li>Control flow is the order in which a computer executes code in a script.</li>
+          <li>The word console refers to a test environment that developers use to check out their code.</li>
+          <li>The second part, .log(), is a method, which means a set of instructions that can be executed by a computer.</li>
+          <li>The .log() method will output whatever we add inside the parentheses to the console.</li>
+          <li>A value is considered falsy if it is one of the following values: 0, -0, On, "", null, undefined, NaN, or a Boolean data type with the value of false. </li>
+          <li>All other values, including a Boolean with the value of true, are considered truthy.</li>
+          <li>The strict equality operator (===) checks to see if two values are equal, and returns a Boolean result true if the values are equal and false if the values are not equal.</li>
+          <li>An array is a single variable that is used to hold a group of data. Arrays are typically used to hold data that is related in some way.</li>
+          <li>A for loop uses the predictable pattern of indices to perform a task on all the items in an array by allowing a single code block to be executed over and over.</li>
+          <li>By using a for loop, we can tell the computer to go through each of the shapes in our array and log them to the console until there are no shapes left. In order to use the for loop, we need the shape's index and the array's length.</li>
+          <li>The array length is important because the for loop needs to know how many times the code will run until there are no items left in the array. We can find the length of an array by using a built-in property of an array, appropriately named length.</li>
+          <li>A for loop contains the following three important statements: </li>
+          <li>first statement determines the starting point for our loop. Since we want to start at the beginning of the array, we declare a variable x and give it a value of 0 (because the first index of an array is always 0): var x = 0</li>
+          <li>second statement is the condition. As long as the number in the variable x is less than the length of the array, the loop will keep running. This will allow the loop to execute one time for each item in the array. We use the length built-in array property on our shapes array to express that condition: x less than shapes.length</li>
+          <li>final statement is what allows the array to iterate over each item. Since indices follow a predictable pattern, we know the number increases by 1 each time. The code x++ is a shortcut way of writing x+1. Now every time the code loops, x will increase by 1: x++</li>
+          <li>for loop for(var x = 0; x less than shapes.length; x++) { // code block} orrrrrrrr for(var x = 0; x less than shapes.length; x++) {console.log(shapes[x]);}</li>
+          <li> Let's step through the process. When the computer hits the for loop, it will start with x being 0. Since x is less than the length of the shapes, which is 4, it will run the code inside the loop. Therefore, it will log the value of shapes[0] in the console, which is "triangle". Then it will increment x, so now x is 1. Then the loop starts over again. 
+            This is repeated until x is 4, which is the length of the array. It will then stop the loop.</li>
+          <li>a function is simply a set of instructions that tells the computer how to perform a certain task.</li>
+          <li>you must call a function by name in order to execute it</li>
+          <li>A function's name is followed by parentheses ().</li>
         </ul>
       </section>
 
@@ -98,5 +127,6 @@
     <footer>
       <p>I can code!</p>
     </footer>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
